@@ -21,12 +21,14 @@ public class Main {
         classic.group2 = "Vanessa Mei";
         classic.group3 = "Louis Armstrong";
 
-        String[][] musicArray = {
+        String[][] musicArray = new String[][]{
                 {pop.genreMusic, pop.group1, pop.group2, pop.group3},
                 {rock.genreMusic, rock.group1, rock.group2, rock.group3},
                 {classic.genreMusic, classic.group1, classic.group2, classic.group3}
         };
         for (String[] music : musicArray) {
+            pop.groups();
+            rock.groups();
             classic.groups();
         }
     }
