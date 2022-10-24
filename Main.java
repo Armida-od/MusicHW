@@ -31,10 +31,9 @@ public class Main {
         classic.group2 = "Vanessa Mei";
         classic.group3 = "Louis Armstrong";
 
-        String[] musicClassic = {classic.genreMusic, classic.group1, classic.group2, classic.group3};
-        for (String group : musicClassic) {
-            classic.groups();
-            break;
-        }
+        MusicStyles[] musicArray = {pop,rock,classic};
+	        for (MusicStyles music : musicArray) {
+	            music.groups();
+	        }
     }
 }
